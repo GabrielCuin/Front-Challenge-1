@@ -9,13 +9,16 @@
       href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz@0,14..32;1,14..32&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./style-header.css" />
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style-header.css" />
     <title>AluraDev</title>
   </head>
   <body>
     <header>
-      <img src="./imgs/Header/Logo@2x.png" alt="Logo Alura Dev" />
-      <input type="text" placeholder="Busque por algo" />
+      <img src="./imgs/Header/Logo.svg" class="logo" alt="Logo Alura Dev" />
+      <input type="text" class="search" name="search" placeholder="Busque por algo" />
+      <button class="btn-search"><img src="./imgs/Icons/Search.svg" class="search-icon" alt="Vetor de uma Lupa"></button>
+      <button class="btn-menu"><img src="./imgs/Icons/Menu.svg" class="menu-icon" alt="Vetor de três linha empilhadas"></button>
       <div class="author">
         <img src="./imgs/foto.jpg" alt="foto do usuário">
         <p>GatoEstranho</p>
