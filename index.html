@@ -9,20 +9,104 @@
       href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz@0,14..32;1,14..32&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/style-header.css" />
+    <link rel="stylesheet" href="./css/style-menu.css" />
+    <link rel="stylesheet" href="./css/style-form.css" />
+    <link rel="stylesheet" href="./css/style-main.css" />
     <title>AluraDev</title>
   </head>
   <body>
-    <header>
-      <img src="./imgs/Header/Logo.svg" class="logo" alt="Logo Alura Dev" />
-      <input type="text" class="search" name="search" placeholder="Busque por algo" />
-      <button class="btn-search"><img src="./imgs/Icons/Search.svg" class="search-icon" alt="Vetor de uma Lupa"></button>
-      <button class="btn-menu"><img src="./imgs/Icons/Menu.svg" class="menu-icon" alt="Vetor de três linha empilhadas"></button>
-      <div class="author">
-        <img src="./imgs/foto.jpg" alt="foto do usuário">
-        <p>GatoEstranho</p>
-      </div>
+    <header class="cabecalho">
+      <img
+        src="./imgs/Header/Logo.svg"
+        class="cabecalho__logo"
+        alt="Logo Alura Dev"
+      />
+      <input
+        type="text"
+        class="cabecalho__input"
+        placeholder="Busque por algo"
+      />
+      <nav>
+        <button class="cabecalho__btn__search">
+          <img
+            src="./imgs/Icons/Search.svg"
+            class="cabecalho__icon"
+            alt="Vetor de uma Lupa"
+          />
+        </button>
+        <button class="cabecalho__btn__menu">
+          <img
+            src="./imgs/Icons/Menu.svg"
+            class="cabecalho__icon"
+            alt="Vetor de três linha empilhadas"
+          />
+        </button>
+        <div class="cabecalho__author">
+          <img src="./imgs/foto.jpg" alt="foto do usuário" />
+          <p>GatoEstranho</p>
+        </div>
+      </nav>
     </header>
+    <main>
+      <aside class="menu">
+        <h2 class="menu__titulo">MENU</h2>
+        <a class="menu__link" href=""
+          ><img
+            class="menu__icon"
+            src="./imgs/Icons/icon_code_selected.svg"
+            alt="Vetor de código"
+          />Editor de código</a
+        >
+        <a class="menu__link" href=""
+          ><img
+            class="menu__icon"
+            src="./imgs/Icons/icon_users.svg"
+            alt="Vetor de usuário"
+          />Comunidade</a
+        >
+      </aside>
+      <div class="container">
+
+      </div>
+      <form class="form">
+        <div class="form__div">
+          <h2 class="form__titulo">SEU PROJETO</h2>
+          <input
+            type="text"
+            class="form__input"
+            placeholder="Nome do seu projeto"
+          />
+          <textarea
+            type="text"
+            class="form__textarea"
+            placeholder="Descrição do seu projeto"
+          ></textarea>
+        </div>
+  
+        <div class="form__div">
+          <h2 class="form__titulo">PERSONALIZAÇÃO</h2>
+          <div>
+            <select class="form__select" name="" id="">
+              <option value="javascript">JavaScript</option>
+              <option value="java">Java</option>
+              <option value="c#">C#</option>
+              <option value="python">Python</option>
+            </select>
+            <input
+              class="form__color"
+              type="color"
+              id="head"
+              name="head"
+              value="#e66465"
+            />
+          </div>
+        </div>
+  
+        <button type="submit" class="form__button">Salvar Projeto</button>
+      </form>
+    </main>
+
   </body>
 </html>
