@@ -1,5 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap");
+
 main {
+  width: 100%;
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.5rem;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  background-color: purple;
+  width: 100%;
+  margin: 40px auto 0;
+  align-items: center;
+}
+
+.container__card {
+  background-color: blue;
+  margin: 1rem auto 0;
+  padding: 2rem;
+  width: 95%;
+  border-radius: 8px;
+}
+
+.container__card__btn {
+  display: flex;
+  gap: 8px;
+  justify-content: flex-start;
+  background-color: #141414;
+  border: none;
+  border-radius: 8px 8px 0 0;
+  padding: 16px;
+}
+
+.container__card__btn__red,
+.container__card__btn__yellow,
+.container__card__btn__green {
+  width: 0.75rem;
+  height: 0.75rem;
+  border: none;
+  border-radius: 50%;
+}
+
+.container__card__btn__red {
+  background-color: #ff5f56;
+}
+
+.container__card__btn__green {
+  background-color: #27c93f;
+}
+
+.container__card__btn__yellow {
+  background-color: #ffbd2e;
+}
+
+.container__card__cod {
+  width: 100%;
+  min-width: 100%;
+  max-width: 100%;
+  max-height: 500px;
+  background-color: #141414;
+  border: none;
+  border-radius: 0 0 8px 8px;
+  color: #ffffff;
+  text-wrap: wrap;
+  padding: 16px;
+
+  font-family: "Roboto Mono", monospace;
+  font-optical-sizing: auto;
+  font-size: 14px;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.container__button {
+  background-color: rgba(80, 129, 251, 0.08);
+  border: none;
+  border-radius: 8px;
+  color: #ffffff;
+  width: 95%;
+  height: 3.5rem;
+  padding: 16px auto;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+@media (min-width: 1440px) {
+  main {
+    align-items: flex-start;
+    flex-direction: row;
+  }
+
+  .container {
+    width: 55%;
+  }
 }

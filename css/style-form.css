@@ -4,7 +4,7 @@
   flex-direction: column;
   gap: 40px;
   width: 100%;
-  margin: 2.5rem 2rem;
+  margin: 0 2rem;
   padding: 2.5rem auto;
   margin-bottom: 40px;
 
@@ -21,7 +21,7 @@
   display: flex;
   flex-direction: column;
   gap: 16px;
-  width: 90%;
+  width: 95%;
   align-self: center;
 }
 
@@ -131,7 +131,7 @@
 
 @media (min-width: 1440px) {
   .form {
-
+    margin-top: 2.5rem;
     width: 15rem;
   }
 

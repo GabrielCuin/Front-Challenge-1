@@ -68,7 +68,27 @@
         >
       </aside>
       <div class="container">
+        <div class="container__card">
+          <div class="container__card__btn">
+            <button class="container__card__btn__red"></button>
+            <button class="container__card__btn__yellow"></button>
+            <button class="container__card__btn__green"></button>
+          </div>
+          <textarea name="" id="" class="container__card__cod" rows="15">
+const pluckDeep = key => obj => key.split('.').reduce((accum, key) => accum[key], obj)
 
+            const compose = (...fns) => res => fns.reduce((accum, next) => next(accum), res)
+            
+            const unfold = (f, seed) => {
+              const go = (f, seed, acc) => {
+                const res = f(seed)
+                return res ? go(f, res[1], acc.concat([res[0]])) : acc
+              }
+              return go(f, seed, [])
+            }
+          </textarea>
+        </div>
+          <button class="container__button">Visualizar com o highlight</button>
       </div>
       <form class="form">
         <div class="form__div">
@@ -84,7 +104,7 @@
             placeholder="Descrição do seu projeto"
           ></textarea>
         </div>
-  
+
         <div class="form__div">
           <h2 class="form__titulo">PERSONALIZAÇÃO</h2>
           <div>
@@ -103,10 +123,9 @@
             />
           </div>
         </div>
-  
+
         <button type="submit" class="form__button">Salvar Projeto</button>
       </form>
     </main>
-
   </body>
 </html>
