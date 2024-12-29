@@ -1,0 +1,229 @@
+body {
+  background-color: #051b3d;
+
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 7.5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 0 2rem;
+  background-color: #051b3d;
+}
+
+input {
+  color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.16);
+  border-radius: 8px;
+  border-style: none;
+
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-size: 16px;
+  font-style: normal;
+  line-height: 24px;
+
+  padding: 16px 14px;
+  height: 3rem;
+  transition: all 0.5s ease-in-out;
+}
+
+.cabecalho__input {
+  display: none;
+}
+
+.cabecalho__input:hover {
+  background-color: rgba(255, 255, 255, 0.24);
+}
+
+.cabecalho__input:focus {
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.24);
+}
+
+input::-webkit-input-placeholder {
+  color: #a3a3a3;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.cabecalho__btn__search {
+  background-color: transparent;
+  border: none;
+  border-radius: 16px;
+
+  height: 3rem;
+  width: 3rem;
+
+  transition: all 0.5s ease-in-out;
+}
+
+.cabecalho__btn__search:hover,
+.cabecalho__btn__menu:hover {
+  background-color: rgba(255, 255, 255, 0.24);
+}
+
+.cabecalho__btn__search div {
+  background-image: url("../imgs/Icons/Search.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 3rem;
+}
+
+.cabecalho__btn__menu {
+  background-color: transparent;
+  border: none;
+  border-radius: 16px;
+
+  height: 3rem;
+  width: 3rem;
+
+  transition: all 0.5s ease-in-out;
+}
+
+.cabecalho__btn__menu div {
+  background-image: url("../imgs/Icons/Menu.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 3rem;
+}
+
+.cabecalho__author {
+  display: none;
+  border-radius: 8px;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+
+  color: #ffffff;
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-size: 16px;
+  font-style: normal;
+  line-height: 24px;
+  padding: 12px;
+  margin-left: 0.5rem;
+
+  transition: all 0.5s ease-in-out;
+}
+
+.cabecalho__author:hover {
+  background-color: rgba(255, 255, 255, 0.08);
+}
+
+.cabecalho__author div {
+  background-image: url("../imgs/foto.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 32px;
+  width: 32px;
+  border-radius: 50%;
+}
+
+footer{
+  position: fixed;
+  bottom: -5rem;
+  width: 100vw;
+  height: 3.5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 2rem;
+  background-color: #051b3d;
+  transition: all 0.5s ease-in-out;
+  z-index: 2;
+}
+
+.footer__input {
+  display: block;
+  color: #ffffff;
+
+  transition: all 0.5s ease-in-out;
+  width: 90%;
+}
+
+.footer__input:hover {
+  background-color: rgba(255, 255, 255, 0.24);
+}
+
+.footer__input:focus {
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.24);
+}
+
+.footer-open {
+  bottom: 0;
+}
+
+.footer__btn {
+  background-color: transparent;
+  border: none;
+  border-radius: 16px;
+
+  height: 3rem;
+  width: 3rem;
+
+  transition: all 0.5s ease-in-out;
+}
+
+.footer__btn div {
+  background-image: url("../imgs/Icons/cross.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 3rem;
+  transition: all .5s ease-in-out;
+}
+
+.footer__btn:hover {
+  background-color: rgba(255, 255, 255, 0.08);
+}
+
+@media (min-width: 834px) {
+  .cabecalho__input {
+    display: block;
+    width: 70%;
+  }
+
+  .cabecalho__btn__search {
+    display: none;
+  }
+}
+
+@media (min-width: 1440px) {
+  .cabecalho__input {
+    width: 70.750rem;
+  }
+
+  .cabecalho__btn__menu {
+    display: none;
+  }
+
+  .cabecalho__author {
+    display: flex;
+  }
+
+  .footer-open {
+    bottom: -5rem;
+  }
+}

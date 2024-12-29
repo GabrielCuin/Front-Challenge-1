@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="pt-br" data-contexto="community">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz@0,14..32;1,14..32&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/style-header-footer.css" />
+    <link rel="stylesheet" href="./css/style-menu.css" />
+    <link rel="stylesheet" href="./css/style-form.css" />
+    <link rel="stylesheet" href="./css/style-comunity.css" />
+    <script src="./js/community.js" defer></script>
+    <title>AluraDev</title>
+  </head>
+  <body>
+    <header class="cabecalho">
+      <img
+        src="./imgs/Header/Logo.svg"
+        class="cabecalho__logo"
+        alt="Logo Alura Dev"
+      />
+      <input
+        type="text"
+        class="cabecalho__input"
+        placeholder="Busque por algo"
+        onfocus="this.placeholder=''"
+        onblur="this.placeholder='Busque por algo'"
+      />
+      <nav>
+        <button class="cabecalho__btn__search">
+          <div></div>
+        </button>
+        <button class="cabecalho__btn__menu">
+          <div></div>
+        </button>
+        <div class="cabecalho__author">
+          <div></div>
+          <p>GatoEstranho</p>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <aside class="menu">
+        <h2 class="menu__titulo">MENU</h2>
+        <a class="menu__link" href="index.html">
+          <div class="menu__icon edit" alt="Vetor editor"></div>
+          Editor de código
+        </a>
+        <a class="menu__link" href="comunity.html">
+          <div class="menu__icon communit" alt="Vetor editor"></div>
+          Comunidade
+        </a>
+      </aside>
+      <aside class="mobile-menu">
+        <a class="menu__link" href="index.html">
+          <div class="menu__icon edit" alt="Vetor editor"></div>
+          Editor de código
+        </a>
+        <a class="menu__link" href="comunity.html">
+          <div class="menu__icon communit" alt="Vetor editor"></div>
+          Comunidade
+        </a>
+        <hr />
+        <div class="mobile-cabecalho__author">
+          <div></div>
+          <p>GatoEstranho</p>
+        </div>
+      </aside>
+      <section>
+        <div class="container">
+          <div class="container__card">
+            <div class="container__card__btn">
+              <button class="container__card__btn__red"></button>
+              <button class="container__card__btn__yellow"></button>
+              <button class="container__card__btn__green"></button>
+            </div>
+            <textarea
+              name=""
+              id=""
+              class="container__card__cod"
+              contenteditable="false"
+              rows="15"
+            >
+            const pluckDeep = key => obj => key.split('.').reduce((accum, key) => accum[key], obj)
+
+            const compose = (...fns) => res => fns.reduce((accum, next) => next(accum), res)
+            
+            const unfold = (f, seed) => {
+              const go = (f, seed, acc) => {
+                const res = f(seed)
+                return res ? go(f, res[1], acc.concat([res[0]])) : acc
+              }
+              return go(f, seed, [])
+            }  
+            </textarea>
+          </div>
+          <a href="">
+            <div class="container__card__description">
+              <h2>Título do projeto</h2>
+              <p>Essa é a descrição do seu projeto</p>
+            </div>
+          </a>
+          <div class="container__card__activity">
+            <div class="container__card__activity__btns">
+              <button class="container__card__activity__btns-comment">
+                <div></div>
+                9
+              </button>
+              <button class="container__card__activity__btns-like">
+                <div></div>
+                9
+              </button>
+            </div>
+            <div class="container__card__activity__author">
+              <div></div>
+              <p>GatoEstranho</p>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="container__card">
+            <div class="container__card__btn">
+              <button class="container__card__btn__red"></button>
+              <button class="container__card__btn__yellow"></button>
+              <button class="container__card__btn__green"></button>
+            </div>
+            <textarea
+              name=""
+              id=""
+              class="container__card__cod"
+              contenteditable="false"
+              rows="15"
+            >
+            const pluckDeep = key => obj => key.split('.').reduce((accum, key) => accum[key], obj)
+
+            const compose = (...fns) => res => fns.reduce((accum, next) => next(accum), res)
+            
+            const unfold = (f, seed) => {
+              const go = (f, seed, acc) => {
+                const res = f(seed)
+                return res ? go(f, res[1], acc.concat([res[0]])) : acc
+              }
+              return go(f, seed, [])
+            }
+        </textarea>
+          </div>
+          <a href="">
+            <div class="container__card__description">
+              <h2>Título do projeto</h2>
+              <p>Essa é a descrição do seu projeto</p>
+            </div>
+          </a>
+          <div class="container__card__activity">
+            <div class="container__card__activity__btns">
+              <button class="container__card__activity__btns-comment">
+                <div></div>
+                9
+              </button>
+              <button class="container__card__activity__btns-like">
+                <div></div>
+                9
+              </button>
+            </div>
+            <div class="container__card__activity__author">
+              <div></div>
+              <p>GatoEstranho</p>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="container__card">
+            <div class="container__card__btn">
+              <button class="container__card__btn__red"></button>
+              <button class="container__card__btn__yellow"></button>
+              <button class="container__card__btn__green"></button>
+            </div>
+            <textarea
+              name=""
+              id=""
+              class="container__card__cod"
+              contenteditable="false"
+              rows="15"
+            >
+            const pluckDeep = key => obj => key.split('.').reduce((accum, key) => accum[key], obj)
+
+            const compose = (...fns) => res => fns.reduce((accum, next) => next(accum), res)
+            
+            const unfold = (f, seed) => {
+              const go = (f, seed, acc) => {
+                const res = f(seed)
+                return res ? go(f, res[1], acc.concat([res[0]])) : acc
+              }
+              return go(f, seed, [])
+            }
+            </textarea>
+          </div>
+          <a href="">
+            <div class="container__card__description">
+              <h2>Título do projeto</h2>
+              <p>Essa é a descrição do seu projeto</p>
+            </div>
+          </a>
+          <div class="container__card__activity">
+            <div class="container__card__activity__btns">
+              <button class="container__card__activity__btns-comment">
+                <div></div>
+                9
+              </button>
+              <button class="container__card__activity__btns-like">
+                <div></div>
+                9
+              </button>
+            </div>
+            <div class="container__card__activity__author">
+              <div></div>
+              <p>GatoEstranho</p>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="container__card">
+            <div class="container__card__btn">
+              <button class="container__card__btn__red"></button>
+              <button class="container__card__btn__yellow"></button>
+              <button class="container__card__btn__green"></button>
+            </div>
+            <textarea
+              name=""
+              id=""
+              class="container__card__cod"
+              contenteditable="false"
+              rows="15"
+            >
+            const pluckDeep = key => obj => key.split('.').reduce((accum, key) => accum[key], obj)
+
+            const compose = (...fns) => res => fns.reduce((accum, next) => next(accum), res)
+            
+            const unfold = (f, seed) => {
+              const go = (f, seed, acc) => {
+                const res = f(seed)
+                return res ? go(f, res[1], acc.concat([res[0]])) : acc
+              }
+              return go(f, seed, [])
+            }
+            </textarea>
+          </div>
+          <a href="">
+            <div class="container__card__description">
+              <h2>Título do projeto</h2>
+              <p>Essa é a descrição do seu projeto</p>
+            </div>
+          </a>
+          <div class="container__card__activity">
+            <div class="container__card__activity__btns">
+              <button class="container__card__activity__btns-comment">
+                <div></div>
+                9
+              </button>
+              <button class="container__card__activity__btns-like">
+                <div></div>
+                9
+              </button>
+            </div>
+            <div class="container__card__activity__author">
+              <div></div>
+              <p>GatoEstranho</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <input
+        type="text"
+        class="footer__input"
+        placeholder="Busque por algo"
+        onfocus="this.placeholder=''"
+        onblur="this.placeholder='Busque por algo'"
+      />
+      <button class="footer__btn">
+        <div></div>
+      </button>
+    </footer>
+  </body>
+</html>

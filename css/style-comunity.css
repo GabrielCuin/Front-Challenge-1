@@ -1,0 +1,239 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap");
+
+main {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.5rem;
+  margin-top: 9.5rem;
+  padding: 0 2rem 2rem;
+}
+
+section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+a {
+  text-decoration: none;
+  align-self: flex-start;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.16);
+  border: none;
+  border-radius: 8px 8px 8px 8px;
+  gap: 0;
+}
+
+.container__card {
+  background-color: blue;
+  margin: 0 auto 0;
+  padding: 2rem;
+  border-radius: 8px;
+  width: 100%;
+}
+
+.container__card__btn {
+  display: flex;
+  gap: 8px;
+  justify-content: flex-start;
+  background-color: #141414;
+  border: none;
+  border-radius: 8px 8px 0 0;
+  padding: 16px;
+}
+
+.container__card__btn__red,
+.container__card__btn__yellow,
+.container__card__btn__green {
+  width: 0.75rem;
+  height: 0.75rem;
+  border: none;
+  border-radius: 50%;
+}
+
+.container__card__btn__red {
+  background-color: #ff5f56;
+}
+
+.container__card__btn__green {
+  background-color: #27c93f;
+}
+
+.container__card__btn__yellow {
+  background-color: #ffbd2e;
+}
+
+.container__card__cod {
+  width: 95%;
+  min-width: 100%;
+  max-width: 100%;
+  max-height: 500px;
+  background-color: #141414;
+  border: none;
+  border-radius: 0 0 8px 8px;
+  color: #ffffff;
+  text-wrap: wrap;
+  padding: 16px;
+  resize: none;
+
+  font-family: "Roboto Mono", monospace;
+  font-optical-sizing: auto;
+  font-size: 14px;
+  font-weight: 400;
+  font-style: normal;
+  text-align: left;
+}
+
+.container__card__description {
+  width: 100%;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  font-family: "Inter", sans-serif;
+  color: #ffffff;
+  justify-content: flex-start;
+  gap: 8px;
+  padding: 1.5rem;
+}
+
+.container__card__description h2 {
+  width: auto;
+  height: 21px;
+  font-weight: 700;
+  font-size: 21px;
+  overflow: hidden;
+}
+
+.container__card__description p {
+  width: auto;
+  font-size: 1rem;
+  overflow: hidden;
+}
+
+.container__card__activity {
+  width: 100%;
+  border: none;
+  border-radius: 0 0 8px 8px;
+  font-family: "Inter", sans-serif;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1.5rem 1.5rem;
+}
+
+.container__card__activity__btns {
+  display: flex;
+  justify-content: space-between;
+  gap: 4px;
+}
+
+.container__card__activity__btns button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #ffffff;
+  font-family: "Inter", sans-serif;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  background-color: transparent;
+}
+
+.container__card__activity__btns button div {
+  background-image: url("../imgs/Icons/comment_icon.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.container__card__activity__btns button:nth-child(2) div {
+  background-image: url("../imgs/Icons/like_icon.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.con.container__card__activity__btns button:nth-child(2) path {
+  fill: red;
+}
+
+.container__card__activity__btns button:nth-child(1),
+.container__card__activity__btns button:nth-child(2) {
+  transition: all 0.5s ease-in-out;
+}
+
+.container__card__activity__btns button:nth-child(1):hover,
+.container__card__activity__btns button:nth-child(2):hover {
+  background-color: rgba(255, 255, 255, 0.24);
+}
+
+.container__card__activity__author {
+  border-radius: 8px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+
+  color: #ffffff;
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-size: 16px;
+  font-style: normal;
+  line-height: 24px;
+  padding: 8px;
+  margin-left: 0.5rem;
+  width: 30%;
+  transition: all 0.5s ease-in-out;
+}
+
+.container__card__activity__author:hover {
+  background-color: rgba(255, 255, 255, 0.24);
+}
+
+.container__card__activity__author div {
+  background-image: url("../imgs/foto.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 1.5rem;
+  width: 1.5rem;
+  border-radius: 50%;
+}
+
+.container__card__activity__author p {
+  width: auto;
+  overflow: hidden;
+}
+
+@media (min-width: 1440px) {
+  main {
+    align-items: flex-start;
+    flex-direction: row;
+  }
+
+  section {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+  }
+
+  .container {
+    width: 44rem;
+  }
+}
